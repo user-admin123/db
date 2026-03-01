@@ -14,7 +14,7 @@ import {
 export async function fetchCategories(): Promise<Category[]> {
   try {
     const { data, error } = await supabase
-      .from("categories")
+      .from("categorie")
       .select("*")
       .order("order_index", { ascending: true });
 
